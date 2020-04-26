@@ -1,0 +1,1189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Awg-re-Dqe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dermalogix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sl0-jj-O5M">
+                                <rect key="frame" x="0.0" y="108" width="414" height="786"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJP-AH-OVd">
+                                <rect key="frame" x="20" y="180" width="374" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="CQK-iB-680"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kh-LX-GGg">
+                                <rect key="frame" x="160" y="700" width="94" height="96"/>
+                                <state key="normal" title="Button" image="icons8-circle-96"/>
+                                <connections>
+                                    <action selector="photoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wcg-6b-Woh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVJ-3N-xUq">
+                                <rect key="frame" x="20" y="230" width="374" height="43"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-facial-recognition-96" translatesAutoresizingMaskIntoConstraints="NO" id="aeO-g6-kb4">
+                                <rect key="frame" x="57" y="11" width="96" height="96"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dermalogix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zx2-BW-eY5">
+                                <rect key="frame" x="161" y="35" width="184" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VVJ-3N-xUq" firstAttribute="centerX" secondItem="sl0-jj-O5M" secondAttribute="centerX" id="2ZU-Vk-T4Z"/>
+                            <constraint firstItem="aeO-g6-kb4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37" id="AA3-QE-kDb"/>
+                            <constraint firstItem="sl0-jj-O5M" firstAttribute="top" secondItem="aeO-g6-kb4" secondAttribute="bottom" constant="1" id="BME-2V-gX7"/>
+                            <constraint firstItem="eJP-AH-OVd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="FWK-1X-9t6"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="sl0-jj-O5M" secondAttribute="bottom" constant="-86" id="Nvh-AI-aYH"/>
+                            <constraint firstItem="Zx2-BW-eY5" firstAttribute="centerY" secondItem="aeO-g6-kb4" secondAttribute="centerY" id="SPP-Hz-zr1"/>
+                            <constraint firstItem="VVJ-3N-xUq" firstAttribute="top" secondItem="eJP-AH-OVd" secondAttribute="bottom" constant="1" id="Tb7-mn-L3D"/>
+                            <constraint firstItem="eJP-AH-OVd" firstAttribute="leading" secondItem="VVJ-3N-xUq" secondAttribute="leading" id="YaK-qj-2SH"/>
+                            <constraint firstItem="eJP-AH-OVd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="YbQ-EY-T9z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8kh-LX-GGg" secondAttribute="bottom" constant="12" id="ZPI-oN-I0c"/>
+                            <constraint firstItem="8kh-LX-GGg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="Zov-FM-LeR"/>
+                            <constraint firstItem="sl0-jj-O5M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ajD-tI-F48"/>
+                            <constraint firstItem="eJP-AH-OVd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="e3g-oT-rCA"/>
+                            <constraint firstItem="Zx2-BW-eY5" firstAttribute="leading" secondItem="aeO-g6-kb4" secondAttribute="trailing" constant="8" id="fMn-Ue-oJC"/>
+                            <constraint firstItem="sl0-jj-O5M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="k3L-nl-BgX"/>
+                            <constraint firstItem="VVJ-3N-xUq" firstAttribute="centerX" secondItem="8kh-LX-GGg" secondAttribute="centerX" id="pQV-kg-rTh"/>
+                            <constraint firstItem="eJP-AH-OVd" firstAttribute="trailing" secondItem="VVJ-3N-xUq" secondAttribute="trailing" id="tDY-w6-9z1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oEv-IV-gAM">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Cdb-m7-EhU"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cameraView" destination="sl0-jj-O5M" id="S2U-UW-9nC"/>
+                        <outlet property="textLabel" destination="eJP-AH-OVd" id="YDI-if-KXZ"/>
+                        <outlet property="textLabel2" destination="VVJ-3N-xUq" id="y6v-sC-myR"/>
+                        <segue destination="2HK-eu-dEa" kind="show" identifier="ScanToRingworm" id="FeL-5W-2EJ"/>
+                        <segue destination="3Go-4h-cWJ" kind="show" identifier="ScanToBenign" id="MeN-Bo-bnF"/>
+                        <segue destination="28W-gW-aW4" kind="show" identifier="ScanToMeasles" id="7wR-fR-M64"/>
+                        <segue destination="UKn-pl-AXk" kind="show" identifier="ScanToMalignant" id="Xr0-3n-Olm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1953.6231884057972" y="133.25892857142856"/>
+        </scene>
+        <!--Benign Moles-->
+        <scene sceneID="fYM-fJ-kbv">
+            <objects>
+                <viewController storyboardIdentifier="mapView" id="3Go-4h-cWJ" customClass="BenignViewController" customModule="Dermalogix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TXq-Qn-e5Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKQ-Ho-Hz2">
+                                <rect key="frame" x="11" y="357" width="383" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="o22-i3-G1C"/>
+                                </constraints>
+                                <string key="text">Overgrown melanin cells that usually appear to those around the age of twenty, but can occasionally grow at birth and later on in life. Benign moles are not usually harmful, but be careful you are correctly identifying your mole is benign instead of a cancerous mole.
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YlT-XA-7Ij">
+                                <rect key="frame" x="11" y="503" width="403" height="86"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="H5J-5k-L7P"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HeE-kV-Ns5">
+                                    <size key="itemSize" width="195" height="128.5"/>
+                                    <size key="estimatedItemSize" width="195" height="128.5"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BenignCollectionViewCell" id="2TL-ld-Yr8" customClass="CollectionViewCell" customModule="Dermalogix" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="5.5" width="195" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Cge-4R-Xvr" customClass="BenignCollectionViewCell" customModule="Dermalogix" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="195" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0W-ic-POL">
+                                                    <rect key="frame" x="42" y="19" width="111" height="37"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="29"/>
+                                                    <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="E0W-ic-POL" firstAttribute="top" secondItem="Cge-4R-Xvr" secondAttribute="top" constant="19" id="Js0-Dm-BWl"/>
+                                                <constraint firstItem="E0W-ic-POL" firstAttribute="centerY" secondItem="Cge-4R-Xvr" secondAttribute="centerY" id="MT4-Bt-LD0"/>
+                                                <constraint firstItem="E0W-ic-POL" firstAttribute="centerX" secondItem="Cge-4R-Xvr" secondAttribute="centerX" id="gUl-4f-OVj"/>
+                                                <constraint firstItem="E0W-ic-POL" firstAttribute="leading" secondItem="Cge-4R-Xvr" secondAttribute="leading" constant="42" id="kVS-Av-j5m"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="195" height="75"/>
+                                        <connections>
+                                            <outlet property="symptomsLabel" destination="E0W-ic-POL" id="utI-8X-AOg"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0oM-5z-yBs">
+                                <rect key="frame" x="20" y="108" width="374" height="221"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tJw-we-K7k">
+                                    <size key="itemSize" width="341" height="186"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BenignImagesCollectionViewCell" id="UQZ-Hc-qTY" customClass="ImagesCollectionViewCell" customModule="Dermalogix" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="17.5" width="341" height="186"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="S0B-9W-bpY">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="186"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NsQ-Ui-Uff">
+                                                    <rect key="frame" x="8" y="6" width="325" height="172"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="NsQ-Ui-Uff" firstAttribute="bottom" secondItem="S0B-9W-bpY" secondAttribute="bottomMargin" id="5q8-uM-AvH"/>
+                                                <constraint firstItem="NsQ-Ui-Uff" firstAttribute="trailing" secondItem="S0B-9W-bpY" secondAttribute="trailingMargin" id="UXI-rv-qYE"/>
+                                                <constraint firstItem="NsQ-Ui-Uff" firstAttribute="top" secondItem="S0B-9W-bpY" secondAttribute="top" constant="6" id="a0m-TA-JE8"/>
+                                                <constraint firstItem="NsQ-Ui-Uff" firstAttribute="leading" secondItem="S0B-9W-bpY" secondAttribute="leadingMargin" id="lX7-eY-Ni3"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="341" height="186"/>
+                                        <connections>
+                                            <outlet property="BenignImage" destination="NsQ-Ui-Uff" id="mZ2-bd-iXN"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are Benign Moles?:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S67-ad-4rE">
+                                <rect key="frame" x="11" y="322" width="263" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jui-L8-Hfn">
+                                <rect key="frame" x="11" y="593" width="383" height="215"/>
+                                <string key="text">Causes: Moles occur due to skin growing in a cluster rather than being spread out, and can become darker and more pigmented in the teen years, by going out in the sun or during pregnancy. While moles are usually not harmful, Atypical benign moles can possibly ead to skin cancer. 
+
+ 
+Rarity: Extremely common, most adults have between 10-40 common moles.
+
+How to treat: While there are many ways to remove moles at home, you can also get them surgically removed, by a surgical procedure or by freezing. Consult your dermatologist to determine what is best for you.
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Symptoms:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXm-57-KUV">
+                                <rect key="frame" x="11" y="465" width="120" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jui-L8-Hfn" firstAttribute="top" secondItem="YlT-XA-7Ij" secondAttribute="bottom" constant="4" id="2Lu-dd-7cg"/>
+                            <constraint firstItem="0oM-5z-yBs" firstAttribute="top" secondItem="Gys-AU-7Ui" secondAttribute="top" id="7KY-MU-j08"/>
+                            <constraint firstItem="bKQ-Ho-Hz2" firstAttribute="top" secondItem="S67-ad-4rE" secondAttribute="bottom" constant="5" id="EAJ-dH-ogW"/>
+                            <constraint firstItem="bKQ-Ho-Hz2" firstAttribute="top" secondItem="0oM-5z-yBs" secondAttribute="bottom" constant="28" id="LYv-Mp-p0u"/>
+                            <constraint firstItem="0oM-5z-yBs" firstAttribute="trailing" secondItem="TXq-Qn-e5Q" secondAttribute="trailingMargin" id="Le1-Ik-kqC"/>
+                            <constraint firstItem="YlT-XA-7Ij" firstAttribute="top" secondItem="KXm-57-KUV" secondAttribute="bottom" constant="8" id="LeI-0h-JiU"/>
+                            <constraint firstItem="S67-ad-4rE" firstAttribute="top" secondItem="Gys-AU-7Ui" secondAttribute="top" constant="214" id="OXl-sm-1NT"/>
+                            <constraint firstItem="0oM-5z-yBs" firstAttribute="leading" secondItem="TXq-Qn-e5Q" secondAttribute="leadingMargin" id="OeX-C5-r9h"/>
+                            <constraint firstItem="bKQ-Ho-Hz2" firstAttribute="trailing" secondItem="Jui-L8-Hfn" secondAttribute="trailing" id="S0u-fq-3yG"/>
+                            <constraint firstItem="YlT-XA-7Ij" firstAttribute="leading" secondItem="Jui-L8-Hfn" secondAttribute="leading" id="S5y-ci-6cQ"/>
+                            <constraint firstItem="YlT-XA-7Ij" firstAttribute="trailing" secondItem="Gys-AU-7Ui" secondAttribute="trailing" id="Zyp-ji-eug"/>
+                            <constraint firstItem="Jui-L8-Hfn" firstAttribute="bottom" secondItem="Gys-AU-7Ui" secondAttribute="bottom" id="aaI-wB-Yqm"/>
+                            <constraint firstItem="0oM-5z-yBs" firstAttribute="trailing" secondItem="bKQ-Ho-Hz2" secondAttribute="trailing" id="akm-DA-yLf"/>
+                            <constraint firstItem="KXm-57-KUV" firstAttribute="leading" secondItem="YlT-XA-7Ij" secondAttribute="leading" id="e7f-Fu-DBH"/>
+                            <constraint firstItem="bKQ-Ho-Hz2" firstAttribute="leading" secondItem="KXm-57-KUV" secondAttribute="leading" id="fXP-AG-lgH"/>
+                            <constraint firstItem="S67-ad-4rE" firstAttribute="leading" secondItem="Gys-AU-7Ui" secondAttribute="leading" constant="11" id="fbE-Dj-1md"/>
+                            <constraint firstItem="S67-ad-4rE" firstAttribute="leading" secondItem="bKQ-Ho-Hz2" secondAttribute="leading" id="lka-kS-2Bt"/>
+                            <constraint firstItem="KXm-57-KUV" firstAttribute="top" secondItem="bKQ-Ho-Hz2" secondAttribute="bottom" id="yC9-pg-TEU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gys-AU-7Ui"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Benign Moles" id="wRs-VY-5FY">
+                        <barButtonItem key="rightBarButtonItem" title="Seek Dermatologist" id="FTJ-MP-g1V">
+                            <connections>
+                                <segue destination="tQ0-U8-Ca4" kind="show" id="0PC-Xd-ogb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="BenignCollectionView" destination="YlT-XA-7Ij" id="DvV-dm-OIb"/>
+                        <outlet property="BenignImageCollectionView" destination="0oM-5z-yBs" id="eKp-4X-oqb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TXG-IJ-Tzm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="802"/>
+        </scene>
+        <!--Ringworm-->
+        <scene sceneID="062-rc-XJb">
+            <objects>
+                <viewController id="2HK-eu-dEa" customClass="RingwormViewController" customModule="Dermalogix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MFA-ux-mfj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eS5-i0-Ojm">
+                                <rect key="frame" x="11" y="382" width="383" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ecV-vt-nfQ"/>
+                                </constraints>
+                                <string key="text">A contagious itching skin disease occurring in small circular patches, caused by any of a number of fungi and affecting chiefly the scalp or the feet. </string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Ringworm?:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ci-mc-drT">
+                                <rect key="frame" x="11" y="347" width="263" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Symptoms:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXK-UC-kLX">
+                                <rect key="frame" x="11" y="465" width="120" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wVe-8L-Lv8">
+                                <rect key="frame" x="11" y="503" width="403" height="86"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="LyB-xe-drW"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oOZ-iI-TOi">
+                                    <size key="itemSize" width="195" height="128.5"/>
+                                    <size key="estimatedItemSize" width="195" height="128.5"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RingwormCollectionViewCell" id="bvJ-Uk-5fg" customClass="RingwormCollectionViewCell" customModule="Dermalogix" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="5.5" width="195" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LtC-vw-iu8" customClass="BenignCollectionViewCell" customModule="Dermalogix" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="195" height="75"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFh-Ni-1bs">
+                                                    <rect key="frame" x="42" y="19" width="111" height="37"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="29"/>
+                                                    <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="nFh-Ni-1bs" firstAttribute="leading" secondItem="LtC-vw-iu8" secondAttribute="leading" constant="42" id="3dW-Vb-XUr"/>
+                                                <constraint firstItem="nFh-Ni-1bs" firstAttribute="centerY" secondItem="LtC-vw-iu8" secondAttribute="centerY" id="GA8-eD-yY5"/>
+                                                <constraint firstItem="nFh-Ni-1bs" firstAttribute="top" secondItem="LtC-vw-iu8" secondAttribute="top" constant="19" id="H9X-jZ-rrc"/>
+                                                <constraint firstItem="nFh-Ni-1bs" firstAttribute="centerX" secondItem="LtC-vw-iu8" secondAttribute="centerX" id="tbB-8x-5ot"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="195" height="75"/>
+                                        <connections>
+                                            <outlet property="ringwormSymptomsLabel" destination="nFh-Ni-1bs" id="Puh-gd-n5b"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kCy-qQ-kl0">
+                                <rect key="frame" x="20" y="108" width="374" height="221"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BjT-ly-L9z">
+                                    <size key="itemSize" width="341" height="186"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RingwormImagesCollectionViewCell" id="DI3-Mu-Nnd" customClass="RingwormImagesCollectionViewCell" customModule="Dermalogix" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="17.5" width="341" height="186"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yvW-6q-zOW">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="186"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gdI-Jk-arl">
+                                                    <rect key="frame" x="8" y="6" width="325" height="172"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gdI-Jk-arl" firstAttribute="top" secondItem="yvW-6q-zOW" secondAttribute="top" constant="6" id="4X7-rD-oYt"/>
+                                                <constraint firstItem="gdI-Jk-arl" firstAttribute="leading" secondItem="yvW-6q-zOW" secondAttribute="leadingMargin" id="LLE-JI-NdS"/>
+                                                <constraint firstItem="gdI-Jk-arl" firstAttribute="bottom" secondItem="yvW-6q-zOW" secondAttribute="bottomMargin" id="OK2-jX-XEt"/>
+                                                <constraint firstItem="gdI-Jk-arl" firstAttribute="trailing" secondItem="yvW-6q-zOW" secondAttribute="trailingMargin" id="ajI-ZP-0bh"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="341" height="186"/>
+                                        <connections>
+                                            <outlet property="RingwormImage" destination="gdI-Jk-arl" id="8nY-m4-sC5"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8De-bD-xc0">
+                                <rect key="frame" x="11" y="593" width="383" height="215"/>
+                                <string key="text">Causes: There are various different type of fungi that can cause ringworm, and they usually live for extended periods of time in the soil. Contact with soil can cause the fungi to spread to humans and infect the skin.
+
+Rarity: Very common, with more than 3 million cases annual in the US.
+
+How it spreads: Ringworm spreads through skin-to-skin contact, such as handshakes and hugs or by touching a contaminated surface, such as a doorknob.
+
+How to treat: Ringworm is treated by antifungal medications. However, we encourage you go to a reliable dermatoligist before seeking medication.
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2ci-mc-drT" firstAttribute="top" secondItem="MFA-ux-mfj" secondAttribute="top" constant="347" id="1Oc-sF-41f"/>
+                            <constraint firstItem="KXK-UC-kLX" firstAttribute="top" secondItem="eS5-i0-Ojm" secondAttribute="bottom" constant="3" id="6xL-eC-o9H"/>
+                            <constraint firstItem="8De-bD-xc0" firstAttribute="bottom" secondItem="hUP-44-Sjr" secondAttribute="bottom" id="7Lh-Lg-Iy7"/>
+                            <constraint firstItem="wVe-8L-Lv8" firstAttribute="leading" secondItem="8De-bD-xc0" secondAttribute="leading" id="90B-8S-6fY"/>
+                            <constraint firstItem="2ci-mc-drT" firstAttribute="top" secondItem="kCy-qQ-kl0" secondAttribute="bottom" constant="18" id="Iez-sN-Hcu"/>
+                            <constraint firstItem="8De-bD-xc0" firstAttribute="top" secondItem="wVe-8L-Lv8" secondAttribute="bottom" constant="4" id="Jbb-67-N9C"/>
+                            <constraint firstItem="hUP-44-Sjr" firstAttribute="trailing" secondItem="2ci-mc-drT" secondAttribute="trailing" constant="140" id="JeV-nj-tk4"/>
+                            <constraint firstItem="kCy-qQ-kl0" firstAttribute="trailing" secondItem="MFA-ux-mfj" secondAttribute="trailingMargin" id="KYi-nz-l3p"/>
+                            <constraint firstItem="wVe-8L-Lv8" firstAttribute="top" secondItem="KXK-UC-kLX" secondAttribute="bottom" constant="8" id="Lvk-hV-Bcy"/>
+                            <constraint firstItem="eS5-i0-Ojm" firstAttribute="leading" secondItem="KXK-UC-kLX" secondAttribute="leading" id="NqH-A2-ykI"/>
+                            <constraint firstItem="KXK-UC-kLX" firstAttribute="leading" secondItem="wVe-8L-Lv8" secondAttribute="leading" id="PVA-yG-iHX"/>
+                            <constraint firstItem="kCy-qQ-kl0" firstAttribute="leading" secondItem="MFA-ux-mfj" secondAttribute="leadingMargin" id="ctk-p2-uGX"/>
+                            <constraint firstItem="wVe-8L-Lv8" firstAttribute="trailing" secondItem="hUP-44-Sjr" secondAttribute="trailing" id="fSv-gq-bbC"/>
+                            <constraint firstItem="eS5-i0-Ojm" firstAttribute="top" secondItem="2ci-mc-drT" secondAttribute="bottom" constant="5" id="hf2-k8-cQZ"/>
+                            <constraint firstItem="kCy-qQ-kl0" firstAttribute="top" secondItem="hUP-44-Sjr" secondAttribute="top" id="jkZ-Dv-xGd"/>
+                            <constraint firstItem="2ci-mc-drT" firstAttribute="leading" secondItem="eS5-i0-Ojm" secondAttribute="leading" id="kYW-cI-fqW"/>
+                            <constraint firstItem="2ci-mc-drT" firstAttribute="leading" secondItem="hUP-44-Sjr" secondAttribute="leading" constant="11" id="slX-Eh-vHR"/>
+                            <constraint firstItem="eS5-i0-Ojm" firstAttribute="trailing" secondItem="kCy-qQ-kl0" secondAttribute="trailing" id="tMT-YB-J1W"/>
+                            <constraint firstItem="eS5-i0-Ojm" firstAttribute="trailing" secondItem="8De-bD-xc0" secondAttribute="trailing" id="yXR-04-thC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hUP-44-Sjr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ringworm" id="ndu-OF-llE">
+                        <barButtonItem key="rightBarButtonItem" title="Seek Dermatologist" id="j5u-GI-Lf4">
+                            <connections>
+                                <segue destination="w1y-Ah-EjS" kind="show" id="YAj-pn-o4z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="RingwormCollectionView" destination="wVe-8L-Lv8" id="7Ad-Ez-184"/>
+                        <outlet property="RingwormImageCollectionView" destination="kCy-qQ-kl0" id="f9D-7v-RMe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cdf-AG-6m5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021.7391304347827" y="801.5625"/>
+        </scene>
+        <!--Measles-->
+        <scene sceneID="sov-Wk-try">
+            <objects>
+                <viewController id="28W-gW-aW4" customClass="MeaslesViewController" customModule="Dermalogix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xAG-Zc-6NY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9V-Er-Y5G">
+                                <rect key="frame" x="11" y="382" width="383" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="cL7-sn-pUk"/>
+                                </constraints>
+                                <string key="text">A skin viral disease that has the ability to spread quickly, however can be cured without treatment within 7 to 10 days.
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are Measles?:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fv4-68-hh9">
+                                <rect key="frame" x="11" y="347" width="208" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Symptoms:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iey-2o-ndd">
+                                <rect key="frame" x="11" y="465" width="120" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="w9e-Ae-28a">
+                                <rect key="frame" x="11" y="503" width="403" height="86"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="bkf-nx-WP8"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Vdo-Bf-HDK">
+                                    <size key="itemSize" width="195" height="128.5"/>
+                                    <size key="estimatedItemSize" width="195" height="128.5"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MeaslesCollectionViewCell" id="iLn-rM-kBI" customClass="MeaslesCollectionViewCell" customModule="Dermalogix" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="5.5" width="195" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wjE-SY-gn6" customClass="BenignCollectionViewCell" customModule="Dermalogix" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="195" height="75"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pr1-op-UcZ">
+                                                    <rect key="frame" x="42" y="19" width="111" height="37"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="29"/>
+                                                    <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="pr1-op-UcZ" firstAttribute="centerY" secondItem="wjE-SY-gn6" secondAttribute="centerY" id="5DX-Uh-g8l"/>
+                                                <constraint firstItem="pr1-op-UcZ" firstAttribute="leading" secondItem="wjE-SY-gn6" secondAttribute="leading" constant="42" id="6e5-In-bhe"/>
+                                                <constraint firstItem="pr1-op-UcZ" firstAttribute="top" secondItem="wjE-SY-gn6" secondAttribute="top" constant="19" id="8dJ-bN-bcu"/>
+                                                <constraint firstItem="pr1-op-UcZ" firstAttribute="centerX" secondItem="wjE-SY-gn6" secondAttribute="centerX" id="uCK-Sh-sk9"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="195" height="75"/>
+                                        <connections>
+                                            <outlet property="measlesSymptomsLabel" destination="pr1-op-UcZ" id="zzJ-h7-HNT"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b97-S6-wQN">
+                                <rect key="frame" x="11" y="593" width="383" height="215"/>
+                                <string key="text">Causes: Measles is caused by the measles virus, but cases have been heavily reduced due to wide spread vaccination. 
+ 
+Rarity: Very rare, about 1000 cases annually in the US.
+
+How it spreads: Measles spreads through skin-to-skin contact, such as handshakes and hugs, by touching a contaminated surface, such as a blankets, or by air droplets amongst others.
+
+How to treat: While measles is not treatable, over-the-counter fever medication and Vitamin A can help reduce the symptoms. We also encourage that if possible, you get the measles vaccination to significantly reduce your chances of getting the disease. Reach out to a reliable doctor if you see symptoms or have been exposed to the measles virus in any manner.
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8dO-ar-mxY">
+                                <rect key="frame" x="11" y="108" width="374" height="221"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3Kc-c5-VON">
+                                    <size key="itemSize" width="184" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MealsesImagesCollectionViewCell" id="dHe-vO-TI1" customClass="MeaslesImagesCollectionViewCell" customModule="Dermalogix" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="17.5" width="341" height="186"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="V1p-HP-zBM">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="186"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4xm-mc-xiA">
+                                                    <rect key="frame" x="8" y="6" width="325" height="172"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4xm-mc-xiA" firstAttribute="leading" secondItem="V1p-HP-zBM" secondAttribute="leadingMargin" id="Cet-2W-c3s"/>
+                                                <constraint firstItem="4xm-mc-xiA" firstAttribute="bottom" secondItem="V1p-HP-zBM" secondAttribute="bottomMargin" id="V4b-G9-CKu"/>
+                                                <constraint firstItem="4xm-mc-xiA" firstAttribute="trailing" secondItem="V1p-HP-zBM" secondAttribute="trailingMargin" id="ckk-7f-MgQ"/>
+                                                <constraint firstItem="4xm-mc-xiA" firstAttribute="top" secondItem="V1p-HP-zBM" secondAttribute="top" constant="6" id="gGJ-jY-Es7"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="341" height="186"/>
+                                        <connections>
+                                            <outlet property="MeaslesImage" destination="4xm-mc-xiA" id="fvc-ws-pk5"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="s9V-Er-Y5G" firstAttribute="leading" secondItem="Iey-2o-ndd" secondAttribute="leading" id="27I-6J-qkF"/>
+                            <constraint firstItem="Fv4-68-hh9" firstAttribute="top" secondItem="xAG-Zc-6NY" secondAttribute="top" constant="347" id="AXc-E4-Fu4"/>
+                            <constraint firstItem="w9e-Ae-28a" firstAttribute="trailing" secondItem="XKS-EC-4YL" secondAttribute="trailing" id="CAq-B0-eAM"/>
+                            <constraint firstItem="Iey-2o-ndd" firstAttribute="top" secondItem="s9V-Er-Y5G" secondAttribute="bottom" constant="3" id="Ji5-pA-8kx"/>
+                            <constraint firstItem="b97-S6-wQN" firstAttribute="bottom" secondItem="XKS-EC-4YL" secondAttribute="bottom" id="Ln2-4w-3Rb"/>
+                            <constraint firstItem="b97-S6-wQN" firstAttribute="top" secondItem="w9e-Ae-28a" secondAttribute="bottom" constant="4" id="Qvd-0T-UPu"/>
+                            <constraint firstItem="Fv4-68-hh9" firstAttribute="leading" secondItem="8dO-ar-mxY" secondAttribute="leading" id="Ri4-IR-e1t"/>
+                            <constraint firstItem="8dO-ar-mxY" firstAttribute="top" secondItem="XKS-EC-4YL" secondAttribute="top" id="XKl-fY-Zca"/>
+                            <constraint firstItem="Iey-2o-ndd" firstAttribute="leading" secondItem="w9e-Ae-28a" secondAttribute="leading" id="XMd-X6-vBT"/>
+                            <constraint firstItem="s9V-Er-Y5G" firstAttribute="leading" secondItem="Fv4-68-hh9" secondAttribute="leading" id="aUg-ix-aTc"/>
+                            <constraint firstItem="w9e-Ae-28a" firstAttribute="top" secondItem="Iey-2o-ndd" secondAttribute="bottom" constant="8" id="dvE-OA-6kg"/>
+                            <constraint firstItem="8dO-ar-mxY" firstAttribute="leading" secondItem="XKS-EC-4YL" secondAttribute="leading" constant="11" id="eS0-QJ-G10"/>
+                            <constraint firstItem="s9V-Er-Y5G" firstAttribute="trailing" secondItem="xAG-Zc-6NY" secondAttribute="trailingMargin" id="eUf-am-MOK"/>
+                            <constraint firstItem="s9V-Er-Y5G" firstAttribute="top" secondItem="Fv4-68-hh9" secondAttribute="bottom" constant="5" id="eqM-AB-8uG"/>
+                            <constraint firstItem="Fv4-68-hh9" firstAttribute="top" secondItem="8dO-ar-mxY" secondAttribute="bottom" constant="18" id="geu-0S-GF2"/>
+                            <constraint firstItem="s9V-Er-Y5G" firstAttribute="trailing" secondItem="b97-S6-wQN" secondAttribute="trailing" id="rfs-pc-FXG"/>
+                            <constraint firstItem="w9e-Ae-28a" firstAttribute="leading" secondItem="b97-S6-wQN" secondAttribute="leading" id="y7m-Nc-Cxd"/>
+                            <constraint firstItem="XKS-EC-4YL" firstAttribute="trailing" secondItem="8dO-ar-mxY" secondAttribute="trailing" constant="29" id="ztY-Gz-gZ8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XKS-EC-4YL"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Measles" id="QaP-Lx-DWO">
+                        <barButtonItem key="rightBarButtonItem" title="Seek Dermatologist" id="Td0-aY-hE1">
+                            <connections>
+                                <segue destination="HpZ-a0-OqO" kind="show" id="Zac-MS-t2b"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="MeaslesCollectionView" destination="w9e-Ae-28a" id="UIM-kf-N44"/>
+                        <outlet property="MeaslesImageCollectionView" destination="8dO-ar-mxY" id="r7n-7w-acd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WZD-OH-Mdc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1797" y="802"/>
+        </scene>
+        <!--Mailignant Melanoma-->
+        <scene sceneID="qCF-oI-jXE">
+            <objects>
+                <viewController id="UKn-pl-AXk" customClass="MMViewController" customModule="Dermalogix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H8E-pw-9V1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKT-tj-3QW">
+                                <rect key="frame" x="11" y="382" width="383" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="cvR-0e-f1B"/>
+                                </constraints>
+                                <string key="text">Melanoma, otherwise known as Malignant Melanoma, is a type of cancer that develops from pigment producing cells known as melanocytes.
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2RP-ca-aUp">
+                                <rect key="frame" x="20" y="108" width="374" height="221"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Dnd-8l-hsc">
+                                    <size key="itemSize" width="341" height="186"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MMImagesCollectionViewCell" id="j5x-Y3-Fei" customClass="MMImagesCollectionViewCell" customModule="Dermalogix" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="17.5" width="341" height="186"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qaY-jY-y0K">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="186"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VYa-DX-iMf">
+                                                    <rect key="frame" x="8" y="6" width="325" height="172"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VYa-DX-iMf" firstAttribute="leading" secondItem="qaY-jY-y0K" secondAttribute="leadingMargin" id="3eH-st-1sA"/>
+                                                <constraint firstItem="VYa-DX-iMf" firstAttribute="bottom" secondItem="qaY-jY-y0K" secondAttribute="bottomMargin" id="B8y-Dq-iYe"/>
+                                                <constraint firstItem="VYa-DX-iMf" firstAttribute="top" secondItem="qaY-jY-y0K" secondAttribute="top" constant="6" id="PKT-bh-nku"/>
+                                                <constraint firstItem="VYa-DX-iMf" firstAttribute="trailing" secondItem="qaY-jY-y0K" secondAttribute="trailingMargin" id="njZ-49-7Qi"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="341" height="186"/>
+                                        <connections>
+                                            <outlet property="MMImages" destination="VYa-DX-iMf" id="azZ-E7-OB6"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Malignant Melanoma?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nav-T4-uZg">
+                                <rect key="frame" x="11" y="347" width="317" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Symptoms:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xd3-5H-6xG">
+                                <rect key="frame" x="11" y="465" width="120" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1Df-eA-ri2">
+                                <rect key="frame" x="11" y="503" width="403" height="86"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="GP1-pj-UeK"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HmS-v6-r8w">
+                                    <size key="itemSize" width="195" height="128.5"/>
+                                    <size key="estimatedItemSize" width="195" height="128.5"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MMCollectionViewCell" id="lPy-GH-DUg" customClass="MMCollectionViewCell" customModule="Dermalogix" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="5.5" width="195" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KT0-Lj-eHW" customClass="BenignCollectionViewCell" customModule="Dermalogix" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="195" height="75"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuO-LQ-Ibk">
+                                                    <rect key="frame" x="42" y="19" width="111" height="37"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="29"/>
+                                                    <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="YuO-LQ-Ibk" firstAttribute="top" secondItem="KT0-Lj-eHW" secondAttribute="top" constant="19" id="Aca-jg-9js"/>
+                                                <constraint firstItem="YuO-LQ-Ibk" firstAttribute="leading" secondItem="KT0-Lj-eHW" secondAttribute="leading" constant="42" id="N3U-rU-ENm"/>
+                                                <constraint firstItem="YuO-LQ-Ibk" firstAttribute="centerX" secondItem="KT0-Lj-eHW" secondAttribute="centerX" id="VP0-3x-bWC"/>
+                                                <constraint firstItem="YuO-LQ-Ibk" firstAttribute="centerY" secondItem="KT0-Lj-eHW" secondAttribute="centerY" id="sSM-PY-KzV"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="195" height="75"/>
+                                        <connections>
+                                            <outlet property="MMSymptomsLabel" destination="YuO-LQ-Ibk" id="JN4-bm-G9z"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rrB-ht-tCd">
+                                <rect key="frame" x="11" y="593" width="383" height="215"/>
+                                <string key="text">Causes: Moles occur due to skin growing in a cluster rather than being spread out, and can become darker and more pigmented in the teen years, by going out in the sun or during pregnancy. While moles are usually not harmful, Atypical benign moles can possibly lead to skin cancer 
+
+Rarity: Extremely common, most adults have between 10-40 common moles.
+
+How to treat: While there are many ways to remove moles at home, you can also get them surgically removed, by a surgical procedure or by freezing. Consult your dermatologist to determine what is best for you.
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Df-eA-ri2" firstAttribute="top" secondItem="Xd3-5H-6xG" secondAttribute="bottom" constant="8" id="4AE-1E-YAO"/>
+                            <constraint firstItem="1Df-eA-ri2" firstAttribute="leading" secondItem="rrB-ht-tCd" secondAttribute="leading" id="5yq-kh-CSv"/>
+                            <constraint firstItem="nav-T4-uZg" firstAttribute="leading" secondItem="rGa-4P-8fs" secondAttribute="leading" constant="11" id="DVP-oa-igJ"/>
+                            <constraint firstItem="Xd3-5H-6xG" firstAttribute="top" secondItem="cKT-tj-3QW" secondAttribute="bottom" constant="3" id="DsG-I4-hsj"/>
+                            <constraint firstItem="cKT-tj-3QW" firstAttribute="trailing" secondItem="rrB-ht-tCd" secondAttribute="trailing" id="EE2-kl-N0s"/>
+                            <constraint firstItem="rrB-ht-tCd" firstAttribute="top" secondItem="1Df-eA-ri2" secondAttribute="bottom" constant="4" id="MEV-3N-Pu6"/>
+                            <constraint firstItem="cKT-tj-3QW" firstAttribute="top" secondItem="nav-T4-uZg" secondAttribute="bottom" constant="5" id="O1N-K2-iuh"/>
+                            <constraint firstItem="rrB-ht-tCd" firstAttribute="bottom" secondItem="rGa-4P-8fs" secondAttribute="bottom" id="Rme-iV-bGf"/>
+                            <constraint firstItem="2RP-ca-aUp" firstAttribute="leading" secondItem="H8E-pw-9V1" secondAttribute="leadingMargin" id="Uz9-sO-pjG"/>
+                            <constraint firstItem="cKT-tj-3QW" firstAttribute="trailing" secondItem="2RP-ca-aUp" secondAttribute="trailing" id="Vl2-yJ-aAd"/>
+                            <constraint firstItem="nav-T4-uZg" firstAttribute="top" secondItem="2RP-ca-aUp" secondAttribute="bottom" constant="18" id="Zbv-Ft-b3Q"/>
+                            <constraint firstItem="1Df-eA-ri2" firstAttribute="trailing" secondItem="rGa-4P-8fs" secondAttribute="trailing" id="flU-x4-6Rd"/>
+                            <constraint firstItem="Xd3-5H-6xG" firstAttribute="leading" secondItem="1Df-eA-ri2" secondAttribute="leading" id="gUy-SF-K0E"/>
+                            <constraint firstItem="2RP-ca-aUp" firstAttribute="top" secondItem="rGa-4P-8fs" secondAttribute="top" id="jBV-Nb-cZv"/>
+                            <constraint firstItem="cKT-tj-3QW" firstAttribute="top" secondItem="H8E-pw-9V1" secondAttribute="top" constant="382" id="lC7-lD-dPI"/>
+                            <constraint firstItem="nav-T4-uZg" firstAttribute="leading" secondItem="cKT-tj-3QW" secondAttribute="leading" id="mya-0v-t0P"/>
+                            <constraint firstItem="cKT-tj-3QW" firstAttribute="leading" secondItem="Xd3-5H-6xG" secondAttribute="leading" id="p8U-Rs-zII"/>
+                            <constraint firstItem="2RP-ca-aUp" firstAttribute="trailing" secondItem="H8E-pw-9V1" secondAttribute="trailingMargin" id="vKD-hN-JVg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rGa-4P-8fs"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mailignant Melanoma" id="utu-1O-Fnm">
+                        <barButtonItem key="rightBarButtonItem" title="Seek Dermatologist" id="AZu-g5-kWP">
+                            <connections>
+                                <segue destination="90x-qd-IIE" kind="show" id="KBk-8m-nT0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="MMCollectionView" destination="1Df-eA-ri2" id="bFB-RQ-Eih"/>
+                        <outlet property="MMImageCollectionView" destination="2RP-ca-aUp" id="SWd-hR-8xe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Umo-f9-jyb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2572" y="802"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cFX-Vk-JAT">
+            <objects>
+                <viewController id="Awg-re-Dqe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Rb-br-EIX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-facial-recognition-96" translatesAutoresizingMaskIntoConstraints="NO" id="ziZ-og-OVu">
+                                <rect key="frame" x="57" y="57" width="96" height="96"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiU-7F-cYD">
+                                <rect key="frame" x="112" y="652" width="190" height="50"/>
+                                <color key="backgroundColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UKg-X4-zQk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Scan Your Skin">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="8tv-wg-n3W" kind="show" id="nMJ-yz-xKb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dermalogix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mT-Sh-CMO">
+                                <rect key="frame" x="161" y="81" width="184" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ab1-d0-yEy">
+                                <rect key="frame" x="20" y="200" width="374" height="396"/>
+                                <string key="text">Dermalogix is a machine learning app which acts as your virtual dermatologist, any time, any place and free of cost. Without having to deal with the costs and hassle of visiting a dermatologist, you can simply scan your skin and get an accurate diagnosis. We have spent hours gathering data and images and training our advanced AI algorithm to correctly diagnose the condition, and also offer a percentage of how "confident" our algorithm is in its prediction.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ab1-d0-yEy" firstAttribute="centerX" secondItem="xiU-7F-cYD" secondAttribute="centerX" id="30Y-5f-biJ"/>
+                            <constraint firstItem="6mT-Sh-CMO" firstAttribute="leading" secondItem="ziZ-og-OVu" secondAttribute="trailing" constant="8" id="8Gm-48-LI8"/>
+                            <constraint firstItem="ziZ-og-OVu" firstAttribute="top" secondItem="Ipz-ZP-CH2" secondAttribute="top" constant="13" id="Bxy-1S-abv"/>
+                            <constraint firstItem="Ab1-d0-yEy" firstAttribute="leading" secondItem="0Rb-br-EIX" secondAttribute="leadingMargin" id="HMT-y8-7k2"/>
+                            <constraint firstItem="Ab1-d0-yEy" firstAttribute="top" secondItem="ziZ-og-OVu" secondAttribute="bottom" constant="47" id="SJO-Y4-Da3"/>
+                            <constraint firstItem="Ipz-ZP-CH2" firstAttribute="bottom" secondItem="xiU-7F-cYD" secondAttribute="bottom" constant="160" id="Ww9-c6-BSp"/>
+                            <constraint firstItem="xiU-7F-cYD" firstAttribute="top" secondItem="Ab1-d0-yEy" secondAttribute="bottom" constant="56" id="d4c-Ia-hFP"/>
+                            <constraint firstItem="6mT-Sh-CMO" firstAttribute="centerY" secondItem="ziZ-og-OVu" secondAttribute="centerY" id="jQW-Zp-h0a"/>
+                            <constraint firstItem="Ipz-ZP-CH2" firstAttribute="trailing" secondItem="xiU-7F-cYD" secondAttribute="trailing" constant="112" id="kyw-X8-cfT"/>
+                            <constraint firstItem="ziZ-og-OVu" firstAttribute="leading" secondItem="Ipz-ZP-CH2" secondAttribute="leading" constant="57" id="rky-2f-UkN"/>
+                            <constraint firstItem="xiU-7F-cYD" firstAttribute="leading" secondItem="Ipz-ZP-CH2" secondAttribute="leading" constant="112" id="s1v-QA-ER6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ipz-ZP-CH2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tQL-9c-s7r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.739130434782609" y="122.54464285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2D2-fV-hMv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="overFullScreen" id="8tv-wg-n3W" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="QSa-or-I2w"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="LEb-7B-qcW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OpC-Iw-ahc">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IuS-hK-Yn9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pXl-yK-8ax" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043.4782608695652" y="133.25892857142856"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="6Y8-Hg-Q7X">
+            <objects>
+                <viewController id="tQ0-U8-Ca4" customClass="MapViewController" customModule="Dermalogix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TJ3-6n-0cy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="099-bJ-Xe3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="501"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="501" id="b2Q-2C-21U"/>
+                                </constraints>
+                            </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nm5-Mr-Lr8">
+                                <rect key="frame" x="0.0" y="461" width="414" height="347"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DermatologistCell" rowHeight="105" id="BhA-Nv-n4l" customClass="DermatologistCell" customModule="Dermalogix" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BhA-Nv-n4l" id="5Z5-uL-OQw">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="105"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Dw-YV-Jkp">
+                                                    <rect key="frame" x="15" y="42" width="345" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                                    <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lH3-9H-LrU">
+                                                    <rect key="frame" x="15" y="73" width="345" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                                    <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zt-DM-f8v">
+                                                    <rect key="frame" x="15" y="11" width="345" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                                    <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="9Dw-YV-Jkp" id="3hw-l7-4Jp"/>
+                                            <outlet property="nameLabel" destination="3zt-DM-f8v" id="yFO-kt-1fs"/>
+                                            <outlet property="phoneNumberLabel" destination="lH3-9H-LrU" id="39v-CW-KC7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="tQ0-U8-Ca4" id="pDg-4J-Rhj"/>
+                                    <outlet property="delegate" destination="tQ0-U8-Ca4" id="FfP-yn-LYp"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nm5-Mr-Lr8" firstAttribute="top" secondItem="D1T-3d-6Jg" secondAttribute="top" constant="353" id="5ty-s1-4a4"/>
+                            <constraint firstItem="nm5-Mr-Lr8" firstAttribute="bottom" secondItem="D1T-3d-6Jg" secondAttribute="bottom" id="G2q-Dj-7o5"/>
+                            <constraint firstItem="099-bJ-Xe3" firstAttribute="trailing" secondItem="nm5-Mr-Lr8" secondAttribute="trailing" id="Is7-Sa-fED"/>
+                            <constraint firstItem="099-bJ-Xe3" firstAttribute="leading" secondItem="D1T-3d-6Jg" secondAttribute="leading" id="L0S-Fq-9Ot"/>
+                            <constraint firstItem="D1T-3d-6Jg" firstAttribute="bottom" secondItem="099-bJ-Xe3" secondAttribute="bottom" constant="307" id="iCU-3l-4d6"/>
+                            <constraint firstItem="099-bJ-Xe3" firstAttribute="centerX" secondItem="TJ3-6n-0cy" secondAttribute="centerX" id="p93-nt-NM7"/>
+                            <constraint firstItem="099-bJ-Xe3" firstAttribute="leading" secondItem="nm5-Mr-Lr8" secondAttribute="leading" id="rVa-iA-eHM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D1T-3d-6Jg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3JJ-tt-Bku"/>
+                    <connections>
+                        <outlet property="mapView" destination="099-bJ-Xe3" id="jgA-ke-1uE"/>
+                        <outlet property="tableView" destination="nm5-Mr-Lr8" id="lKG-bq-J4N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ige-aL-YtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="147.82608695652175" y="1496.6517857142856"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="wkN-3g-ezs">
+            <objects>
+                <viewController id="w1y-Ah-EjS" customClass="MapViewController" customModule="Dermalogix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jTF-BF-hwg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jbk-H2-Nx8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="501"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="501" id="mul-cm-XxP"/>
+                                </constraints>
+                            </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n3G-se-cyh">
+                                <rect key="frame" x="0.0" y="461" width="414" height="347"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DermatologistCell" rowHeight="105" id="Vfl-7M-y6F" customClass="DermatologistCell" customModule="Dermalogix" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vfl-7M-y6F" id="xEz-Zd-bgR">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="105"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7f-tm-JmJ">
+                                                    <rect key="frame" x="15" y="42" width="345" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                                    <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIs-tJ-Ahz">
+                                                    <rect key="frame" x="15" y="73" width="345" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                                    <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9V-g2-OLj">
+                                                    <rect key="frame" x="15" y="11" width="345" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                                    <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="Q7f-tm-JmJ" id="Qfv-rs-Q4t"/>
+                                            <outlet property="nameLabel" destination="k9V-g2-OLj" id="74a-Nh-Rsj"/>
+                                            <outlet property="phoneNumberLabel" destination="xIs-tJ-Ahz" id="3Gz-GW-E9x"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="w1y-Ah-EjS" id="24e-4K-qSo"/>
+                                    <outlet property="delegate" destination="w1y-Ah-EjS" id="Vqr-SW-yTC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jbk-H2-Nx8" firstAttribute="leading" secondItem="ULg-0f-TFz" secondAttribute="leading" id="DCk-gS-nFp"/>
+                            <constraint firstItem="n3G-se-cyh" firstAttribute="top" secondItem="ULg-0f-TFz" secondAttribute="top" constant="353" id="Kf6-ex-U0g"/>
+                            <constraint firstItem="jbk-H2-Nx8" firstAttribute="trailing" secondItem="n3G-se-cyh" secondAttribute="trailing" id="NbD-fb-ljs"/>
+                            <constraint firstItem="jbk-H2-Nx8" firstAttribute="centerX" secondItem="jTF-BF-hwg" secondAttribute="centerX" id="Wag-HP-83U"/>
+                            <constraint firstItem="ULg-0f-TFz" firstAttribute="bottom" secondItem="jbk-H2-Nx8" secondAttribute="bottom" constant="307" id="a95-da-xfB"/>
+                            <constraint firstItem="n3G-se-cyh" firstAttribute="bottom" secondItem="ULg-0f-TFz" secondAttribute="bottom" id="kwo-SF-8fj"/>
+                            <constraint firstItem="jbk-H2-Nx8" firstAttribute="leading" secondItem="n3G-se-cyh" secondAttribute="leading" id="qBl-MU-Tg2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ULg-0f-TFz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="g7Z-bS-uNT"/>
+                    <connections>
+                        <outlet property="mapView" destination="jbk-H2-Nx8" id="4NJ-3M-6YF"/>
+                        <outlet property="tableView" destination="n3G-se-cyh" id="rzx-1Z-LcW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Px7-ze-t7S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="1497"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Km9-qV-UJP">
+            <objects>
+                <viewController id="HpZ-a0-OqO" customClass="MapViewController" customModule="Dermalogix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Scj-VL-1VC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zb6-D9-iMM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="501"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="501" id="NJx-9W-q8G"/>
+                                </constraints>
+                            </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T9E-Ve-QRE">
+                                <rect key="frame" x="0.0" y="461" width="414" height="347"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DermatologistCell" rowHeight="105" id="dLO-dx-4MD" customClass="DermatologistCell" customModule="Dermalogix" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dLO-dx-4MD" id="XGa-Yf-wgQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="105"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAO-Rm-FPz">
+                                                    <rect key="frame" x="15" y="42" width="345" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                                    <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOk-6G-VtO">
+                                                    <rect key="frame" x="15" y="73" width="345" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                                    <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lg9-jU-ig0">
+                                                    <rect key="frame" x="15" y="11" width="345" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                                    <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="CAO-Rm-FPz" id="dqJ-GS-R2y"/>
+                                            <outlet property="nameLabel" destination="Lg9-jU-ig0" id="M1p-ym-Rcs"/>
+                                            <outlet property="phoneNumberLabel" destination="xOk-6G-VtO" id="evE-dD-1qU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="HpZ-a0-OqO" id="ZcW-1f-ORh"/>
+                                    <outlet property="delegate" destination="HpZ-a0-OqO" id="bT3-lt-MAY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QFT-40-Mkl" firstAttribute="bottom" secondItem="zb6-D9-iMM" secondAttribute="bottom" constant="307" id="28u-aA-ODN"/>
+                            <constraint firstItem="T9E-Ve-QRE" firstAttribute="bottom" secondItem="QFT-40-Mkl" secondAttribute="bottom" id="5IJ-jX-zQr"/>
+                            <constraint firstItem="T9E-Ve-QRE" firstAttribute="top" secondItem="QFT-40-Mkl" secondAttribute="top" constant="353" id="BMt-6v-dHs"/>
+                            <constraint firstItem="zb6-D9-iMM" firstAttribute="leading" secondItem="T9E-Ve-QRE" secondAttribute="leading" id="BlY-b9-PRE"/>
+                            <constraint firstItem="zb6-D9-iMM" firstAttribute="centerX" secondItem="Scj-VL-1VC" secondAttribute="centerX" id="I1R-ex-rwB"/>
+                            <constraint firstItem="zb6-D9-iMM" firstAttribute="leading" secondItem="QFT-40-Mkl" secondAttribute="leading" id="YY6-Gz-F62"/>
+                            <constraint firstItem="zb6-D9-iMM" firstAttribute="trailing" secondItem="T9E-Ve-QRE" secondAttribute="trailing" id="tyn-nO-8Su"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QFT-40-Mkl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="R6s-TW-mKW"/>
+                    <connections>
+                        <outlet property="mapView" destination="zb6-D9-iMM" id="RSx-KE-92n"/>
+                        <outlet property="tableView" destination="T9E-Ve-QRE" id="VFT-NO-yvf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cH6-Fi-wek" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1796" y="1497"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="JtV-a2-UtT">
+            <objects>
+                <viewController id="90x-qd-IIE" customClass="MapViewController" customModule="Dermalogix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fDc-0o-HSj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="udr-i7-VFE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="501"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="501" id="4v3-ij-DUA"/>
+                                </constraints>
+                            </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JTD-c5-uUp">
+                                <rect key="frame" x="0.0" y="461" width="414" height="347"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DermatologistCell" rowHeight="105" id="EbT-pt-IMQ" customClass="DermatologistCell" customModule="Dermalogix" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EbT-pt-IMQ" id="wcZ-UZ-CQY">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="105"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJ4-Wu-8Vd">
+                                                    <rect key="frame" x="15" y="42" width="345" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                                    <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNv-wk-F2z">
+                                                    <rect key="frame" x="15" y="73" width="345" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                                    <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeE-Wx-lNJ">
+                                                    <rect key="frame" x="15" y="11" width="345" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                                    <color key="textColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="FJ4-Wu-8Vd" id="DgX-0C-1XS"/>
+                                            <outlet property="nameLabel" destination="ZeE-Wx-lNJ" id="1HM-Mi-QzF"/>
+                                            <outlet property="phoneNumberLabel" destination="oNv-wk-F2z" id="pqf-Js-Jm6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="90x-qd-IIE" id="NCX-Wj-0fK"/>
+                                    <outlet property="delegate" destination="90x-qd-IIE" id="XwM-Ek-Bgf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="udr-i7-VFE" firstAttribute="leading" secondItem="mNh-Q0-quG" secondAttribute="leading" id="4kb-4d-Mln"/>
+                            <constraint firstItem="mNh-Q0-quG" firstAttribute="bottom" secondItem="udr-i7-VFE" secondAttribute="bottom" constant="307" id="E9A-cm-QiN"/>
+                            <constraint firstItem="udr-i7-VFE" firstAttribute="leading" secondItem="JTD-c5-uUp" secondAttribute="leading" id="UKQ-7G-eBI"/>
+                            <constraint firstItem="udr-i7-VFE" firstAttribute="trailing" secondItem="JTD-c5-uUp" secondAttribute="trailing" id="b7C-AA-enS"/>
+                            <constraint firstItem="JTD-c5-uUp" firstAttribute="bottom" secondItem="mNh-Q0-quG" secondAttribute="bottom" id="jYx-bq-vFA"/>
+                            <constraint firstItem="JTD-c5-uUp" firstAttribute="top" secondItem="mNh-Q0-quG" secondAttribute="top" constant="353" id="kBp-c2-ouF"/>
+                            <constraint firstItem="udr-i7-VFE" firstAttribute="centerX" secondItem="fDc-0o-HSj" secondAttribute="centerX" id="w8S-ZX-FYG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mNh-Q0-quG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cgl-eo-qxE"/>
+                    <connections>
+                        <outlet property="mapView" destination="udr-i7-VFE" id="uts-nf-bhr"/>
+                        <outlet property="tableView" destination="JTD-c5-uUp" id="FQJ-u0-3pE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6IO-2W-VRp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2571" y="1497"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.64867830280000005" green="0.39081197979999999" blue="0.74552708860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <resources>
+        <image name="icons8-circle-96" width="96" height="96"/>
+        <image name="icons8-facial-recognition-96" width="96" height="96"/>
+    </resources>
+</document>
